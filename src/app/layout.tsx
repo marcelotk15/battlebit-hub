@@ -7,7 +7,7 @@ import { cn } from '~/lib/utils'
 import { fontSans } from '~/lib/fonts'
 import { siteConfig } from '~/config/site'
 
-import { LayoutHeader } from './layoutHeader'
+import { LayoutHeader } from './layout-header'
 
 export const metadata: Metadata = {
   title: {

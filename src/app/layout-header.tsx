@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation'
 import { buttonVariants } from '~/components/ui/button'
 import { cn } from '~/lib/utils'
 import { siteConfig } from '~/config/site'
+import { ThemeSelector } from '~/components/theme-selector'
 
 export function LayoutHeader() {
   const pathname = usePathname()
@@ -48,6 +49,8 @@ export function LayoutHeader() {
                 <span className="sr-only">GitHub</span>
               </div>
             </Link>
+
+            <ThemeSelector />
           </nav>
         </div>
       </div>
