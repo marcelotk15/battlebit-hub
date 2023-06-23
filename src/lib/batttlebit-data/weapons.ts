@@ -1,10 +1,10 @@
-const WeaponsNames = ['ACR', 'AK-15']
+// const WeaponsNames = ['ACR', 'AK-15']
 
-type WeaponsName = 'ACR' | 'AK-15' | 'AK-74'
+// type WeaponsName = 'ACR' | 'AK-15' | 'AK-74'
 
 export interface WeaponConfig {
   weaponType: string
-  name: WeaponsName
+  name: string //WeaponsName
   imageName: string
   hasModel?: boolean
   modelFov?: number
