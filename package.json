@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "analyze": "ANALYZE=true NODE_ENV=production next build && node scripts/analyze-bundles.js"
+    "lint": "next lint"
   },
   "dependencies": {
     "@radix-ui/react-checkbox": "^1.0.4",
@@ -44,5 +43,11 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier-plugin-tailwindcss": "^0.3.0"
+  },
+  "nextBundleAnalysis": {
+    "budget": 358400,
+    "budgetPercentIncreaseRed": 20,
+    "minimumChangeThreshold": 0,
+    "showDetails": true
   }
 }
