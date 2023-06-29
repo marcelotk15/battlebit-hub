@@ -63,11 +63,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning>
       <head />
 
-      <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
+      <body className={cn('bg-background font-sans antialiased', fontSans.variable)}>
         <Providers>
-          <div className="relative flex min-h-screen flex-col">
+          <div className="flex h-full min-h-screen flex-col">
             <LayoutHeader />
-            <div className="flex-1">{children}</div>
+            <main className="flex-auto">{children}</main>
 
             {/* <SiteFooter /> */}
           </div>
