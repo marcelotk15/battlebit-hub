@@ -24,12 +24,18 @@ export function LayoutHeader() {
           <nav className="flex items-center space-x-6 text-sm font-medium">
             <Link
               href="/servers"
-              className={cn(
-                'transition-colors hover:text-foreground/80',
-                pathname === '/servers' ? 'text-foreground' : 'text-foreground/60',
-              )}
+              data-actual={pathname === '/servers'}
+              className="text-foreground/60 transition-colors hover:text-foreground/80 data-[actual=true]:text-foreground"
             >
               Servers
+            </Link>
+
+            <Link
+              href="/weapons"
+              data-actual={pathname === '/weapons'}
+              className="text-foreground/60 transition-colors hover:text-foreground/80 data-[actual=true]:text-foreground"
+            >
+              Weapons
             </Link>
           </nav>
         </div>
