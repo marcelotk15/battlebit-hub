@@ -4,6 +4,6 @@ export const siteConfig = {
   url: '',
   ogImage: '',
   links: {
-    github: 'https://github.com/teka15/battlebit-hub',
+    github: 'https://github.com/marcelotk15/battlebit-hub',
   },
 }
