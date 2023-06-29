@@ -1,5 +1,4 @@
 'use client'
-import { Canvas } from '@react-three/fiber'
 import {
   OrbitControls,
   Environment,
@@ -9,8 +8,11 @@ import {
 } from '@react-three/drei'
 import * as THREE from 'three'
 import { useMemo, useRef } from 'react'
+import dynamic from 'next/dynamic'
 
 import { WeaponObejct } from '~/app/weapons/weapon'
+
+const Canvas = dynamic(() => import('@react-three/fiber').then((mod) => mod.Canvas))
 
 export function WeaponRender() {
   const containerRef = useRef<HTMLDivElement>(null)
